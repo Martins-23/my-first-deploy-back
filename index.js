@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:5173'
+  origin: ['http://localhost:5173', "https://my-first-deploy-front.vercel.app/"]
 };
 
 app.use(cors(corsOptions));
